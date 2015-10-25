@@ -1,0 +1,344 @@
+---
+title: "CodeBook"
+author: "Kevin McCreery"
+date: "October 25, 2015"
+output: html_document
+---
+
+
+# Created to supplement Kevin McCreery's submission for Getting and Cleaning Data, from Johns Hopkins Data Science Specialization  
+
+
+##High-Level Description of the Data
+The following variables are present in the output text file. Except for the subjectid and activityname variables, each variable is the mean of multiple observations for the same subjec and activity. The data were gathered using a Samsung Galaxy S II smartphone's gyroscope and accelerometer, and then various transformations were applied. Details for each variable are present in the following "Variables" section of the codebook.  
+
+
+
+#Variables  
+
+###subjectid
+Type: integer  
+Description: This integer identifies the subject of the study. All observations are tied to the subject ID.
+
+###activityname
+Type: character  
+Description: These strings identify what the subject was doing at the time an observation was taken.
+
+###tbodyacc.mean...x
+Type: double  
+Description: Body acceleration mean (ignores gravity) in the x direction.
+
+###tbodyacc.mean...y
+Type: double  
+Description: Body acceleration mean (ignores gravity) in the y direction.
+
+###tbodyacc.mean...z
+Type: double  
+Description: Body acceleration mean (ignores gravity) in the z direction.
+
+###tbodyacc.std...x
+Type: double  
+Description: Body acceleration standard deviation (ignores gravity) in the x direction.
+
+###tbodyacc.std...y
+Type: double  
+Description: Body acceleration standard deviation (ignores gravity) in the y direction.
+
+###tbodyacc.std...z
+Type: double  
+Description: Body acceleration standard deviation (ignores gravity) in the z direction.
+
+###tgravityacc.mean...x
+Type: double  
+Description: Gravity acceleration mean (ignores body acceleration) in the x direction.
+
+###tgravityacc.mean...y
+Type: double  
+Description: Gravity acceleration mean (ignores body acceleration) in the y direction.
+
+###tgravityacc.mean...z
+Type: double  
+Description: Gravity acceleration mean (ignores body acceleration) in the z direction.
+
+###tgravityacc.std...x
+Type: double  
+Description: Gravity acceleration standard deviation (ignores body acceleration) in the x direction.
+
+###tgravityacc.std...y
+Type: double  
+Description: Gravity acceleration standard deviation (ignores body acceleration) in the y direction.
+
+###tgravityacc.std...z
+Type: double  
+Description: Gravity acceleration standard deviation (ignores body acceleration) in the z direction.
+
+###tbodyaccjerk.mean...x
+Type: double  
+Description: Body Jerk signal mean (ignores gravity) in the x direction.
+
+###tbodyaccjerk.mean...y
+Type: double  
+Description: Body Jerk signal mean (ignores gravity) in the y direction.
+
+###tbodyaccjerk.mean...z
+Type: double  
+Description: Body Jerk signal mean (ignores gravity) in the z direction.
+
+###tbodyaccjerk.std...x
+Type: double  
+Description: Body Jerk signal standard deviation (ignores gravity) in the x direction.
+
+###tbodyaccjerk.std...y
+Type: double  
+Description: Body Jerk signal standard deviation (ignores gravity) in the y direction.
+
+###tbodyaccjerk.std...z
+Type: double  
+Description: Body Jerk signal standard deviation (ignores gravity) in the z direction.
+
+###tbodygyro.mean...x
+Type: double  
+Description: Body gyroscope mean (ignores gravity) in the x direction.
+
+###tbodygyro.mean...y
+Type: double  
+Description: Body gyroscope mean (ignores gravity) in the y direction.
+
+###tbodygyro.mean...z
+Type: double  
+Description: Body gyroscope mean (ignores gravity) in the z direction.
+
+###tbodygyro.std...x
+Type: double  
+Description: Body gyroscope standard deviation (ignores gravity) in the x direction.
+
+###tbodygyro.std...y
+Type: double  
+Description: Body gyroscope standard deviation (ignores gravity) in the y direction.
+
+###tbodygyro.std...z
+Type: double  
+Description: Body gyroscope standard deviation (ignores gravity) in the z direction.
+
+###tbodygyrojerk.mean...x
+Type: double  
+Description: Body gyroscope jerk signal mean (ignores gravity) in the x direction.
+
+###tbodygyrojerk.mean...y
+Type: double  
+Description: Body gyroscope jerk signal mean (ignores gravity) in the y direction.
+
+###tbodygyrojerk.mean...z
+Type: double  
+Description: Body gyroscope jerk signal mean (ignores gravity) in the z direction.
+
+###tbodygyrojerk.std...x
+Type: double  
+Description: Body gyroscope jerk signal standard deviation (ignores gravity) in the x direction.
+
+###tbodygyrojerk.std...y
+Type: double  
+Description: Body gyroscope jerk signal standard deviation (ignores gravity) in the y direction.
+
+###tbodygyrojerk.std...z
+Type: double  
+Description: Body gyroscope jerk signal standard deviation (ignores gravity) in the z direction.
+
+###tbodyaccmag.mean..
+Type: double  
+Description: Body acceleration magnitude mean (calculated using Euclidean norm).
+
+###tbodyaccmag.std..
+Type: double  
+Description: Body acceleration magnitude standard deviation (calculated using Euclidean norm).
+
+###tgravityaccmag.mean..
+Type: double  
+Description: Gravity acceleration magnitude mean (calculated using Euclidean norm).
+
+###tgravityaccmag.std..
+Type: double  
+Description: Gravity acceleration magnitude standard deviation (calculated using Euclidean norm).
+
+###tbodyaccjerkmag.mean..
+Type: double  
+Description: Body acceleration jerk signal magnitude mean (calculated using Euclidean norm).
+
+###tbodyaccjerkmag.std..
+Type: double  
+Description: Body acceleration jerk signal magnitude standard (calculated using Euclidean norm).
+
+###tbodygyromag.mean..
+Type: double  
+Description: Body gyroscope magnitude mean (calculated using Euclidean norm).
+
+###tbodygyromag.std..
+Type: double  
+Description: Body gyroscope magnitude standard deviation (calculated using Euclidean norm).
+
+###tbodygyrojerkmag.mean..
+Type: double  
+Description: Body gyroscope jerk signal magnitude mean (calculated using Euclidean norm).
+
+###tbodygyrojerkmag.std..
+Type: double  
+Description: Body gyroscope jerk signal magnitude standard deviation (calculated using Euclidean norm).
+
+###fbodyacc.mean...x
+Type: double  
+Description: Body acceleration mean (ignores gravity) in the x direction, with Fast Fourier Transform applied.
+
+###fbodyacc.mean...y
+Type: double  
+Description: Body acceleration mean (ignores gravity) in the y direction, with Fast Fourier Transform applied.
+
+###fbodyacc.mean...z
+Type: double  
+Description: Body acceleration mean (ignores gravity) in the z direction, with Fast Fourier Transform applied.
+
+###fbodyacc.std...x
+Type: double  
+Description: Body acceleration standard deviation (ignores gravity) in the x direction, with Fast Fourier Transform applied.
+
+###fbodyacc.std...y
+Type: double  
+Description: Body acceleration standard deviation (ignores gravity) in the y direction, with Fast Fourier Transform applied.
+
+###fbodyacc.std...z
+Type: double  
+Description: Body acceleration standard deviation (ignores gravity) in the z direction, with Fast Fourier Transform applied.
+
+###fbodyacc.meanfreq...x
+Type: double  
+Description: Body acceleration mean frequency (ignores gravity) in the x direction, with Fast Fourier Transform applied.
+
+###fbodyacc.meanfreq...y
+Type: double  
+Description: Body acceleration mean frequency (ignores gravity) in the y direction, with Fast Fourier Transform applied.
+
+
+###fbodyacc.meanfreq...z
+Type: double  
+Description: Body acceleration mean frequency (ignores gravity) in the z direction, with Fast Fourier Transform applied.
+
+
+###fbodyaccjerk.mean...x
+Type: double  
+Description: Body acceleration jerk signal mean (ignores gravity) in the x direction, with Fast Fourier Transform applied.
+
+
+###fbodyaccjerk.mean...y
+Type: double  
+Description: Body acceleration jerk signal mean (ignores gravity) in the y direction, with Fast Fourier Transform applied.
+
+###fbodyaccjerk.mean...z
+Type: double  
+Description: Body acceleration jerk signal mean (ignores gravity) in the z direction, with Fast Fourier Transform applied.
+
+###fbodyaccjerk.std...x
+Type: double  
+Description: Body acceleration jerk signal standard deviation (ignores gravity) in the x direction, with Fast Fourier Transform applied.
+
+###fbodyaccjerk.std...y
+Type: double  
+Description: Body acceleration jerk signal standard deviation (ignores gravity) in the y direction, with Fast Fourier Transform applied.
+
+###fbodyaccjerk.std...z
+Type: double  
+Description: Body acceleration jerk signal standard deviation (ignores gravity) in the z direction, with Fast Fourier Transform applied.
+
+###fbodyaccjerk.meanfreq...x
+Type: double  
+Description: Body acceleration jerk signal mean frequency (ignores gravity) in the x direction, with Fast Fourier Transform applied.
+
+###fbodyaccjerk.meanfreq...y
+Type: double  
+Description: Body acceleration jerk signal mean frequency (ignores gravity) in the y direction, with Fast Fourier Transform applied.
+
+###fbodyaccjerk.meanfreq...z
+Type: double  
+Description: Body acceleration jerk signal mean frequency (ignores gravity) in the z direction, with Fast Fourier Transform applied.
+
+###fbodygyro.mean...x
+Type: double  
+Description: Body gyroscope mean (ignores gravity) in the x direction, with Fast Fourier Transform applied.
+
+###fbodygyro.mean...y
+Type: double  
+Description: Body gyroscope mean (ignores gravity) in the y direction, with Fast Fourier Transform applied.
+
+###fbodygyro.mean...z
+Type: double  
+Description: Body gyroscope mean (ignores gravity) in the z direction, with Fast Fourier Transform applied.
+
+###fbodygyro.std...x
+Type: double  
+Description: Body gyroscope standard deviation (ignores gravity) in the x direction, with Fast Fourier Transform applied.
+
+###fbodygyro.std...y
+Type: double  
+Description: Body gyroscope standard deviation (ignores gravity) in the y direction, with Fast Fourier Transform applied.
+
+###fbodygyro.std...z
+Type: double  
+Description: Body gyroscope standard deviation (ignores gravity) in the z direction, with Fast Fourier Transform applied.
+
+###fbodygyro.meanfreq...x
+Type: double  
+Description: Body gyroscope mean frequency (ignores gravity) in the x direction, with Fast Fourier Transform applied.
+
+###fbodygyro.meanfreq...y
+Type: double  
+Description: Body gyroscope mean frequency (ignores gravity) in the y direction, with Fast Fourier Transform applied.
+
+###fbodygyro.meanfreq...z
+Type: double  
+Description: Body gyroscope mean frequency (ignores gravity) in the z direction, with Fast Fourier Transform applied.
+
+###fbodyaccmag.mean..
+Type: double  
+Description: Body acceleration magnitude mean with Fast Fourier Transform applied.
+
+###fbodyaccmag.std..
+Type: double  
+Description: Body acceleration magnitude standard deviation with Fast Fourier Transform applied.
+
+###fbodyaccmag.meanfreq..
+Type: double  
+Description: Body acceleration magnitude mean frequency with Fast Fourier Transform applied.
+
+###fbodybodyaccjerkmag.mean..
+Type: double  
+Description: Body acceleration magnitude jerk signal mean with Fast Fourier Transform applied.
+
+###fbodybodyaccjerkmag.std..
+Type: double  
+Description: Body acceleration magnitude jerk signal standard deviation with Fast Fourier Transform applied.
+
+###fbodybodyaccjerkmag.meanfreq..
+Type: double  
+Description: Body acceleration magnitude jerk signal mean frequency with Fast Fourier Transform applied.
+
+###fbodybodygyromag.mean..
+Type: double  
+Description: Body acceleration gyroscope magnitude mean with Fast Fourier Transform applied.
+
+###fbodybodygyromag.std..
+Type: double  
+Description: Body acceleration gyroscope magnitude standard deviation with Fast Fourier Transform applied.
+
+###fbodybodygyromag.meanfreq..
+Type: double  
+Description: Body acceleration gyroscope magnitude mean frequency with Fast Fourier Transform applied.
+
+###fbodybodygyrojerkmag.mean..
+Type: double  
+Description: Body acceleration gyroscope jerk signal magnitude mean with Fast Fourier Transform applied.
+
+###fbodybodygyrojerkmag.std..
+Type: double  
+Description: Body acceleration gyroscope jerk signal magnitude standard deviation with Fast Fourier Transform applied.
+
+###fbodybodygyrojerkmag.meanfreq..
+Type: double  
+Description: Body acceleration gyroscope jerk signal magnitude mean frequency with Fast Fourier Transform applied.
